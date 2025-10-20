@@ -1,0 +1,69 @@
+# Maven / Java
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+*.iml
+.idea/
+out/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# OS generated
+Thumbs.db
+
+# Files created by build tools
+/build/
+
+# Node (in case tools are added)
+node_modules/
+
+# Local env files
+.env
+
+# maven wrapper
+.mvn/
+
+# codelab assets (optional)
+codelab/assets/
+
+# temporary files
+*.tmp
+*~
+
+# test output
+/test-output/
+
+# JetBrains
+.idea/
+
+# Others
+*.iml
+
+# Ignore IDE specific workspace files
+*.swp
+
+# Gradle
+.gradle/
+
+# Binary files
+*.class
+
+# ensure target is ignored
+/target/
