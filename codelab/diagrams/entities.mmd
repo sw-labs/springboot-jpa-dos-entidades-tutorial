@@ -1,0 +1,13 @@
+%% Mermaid diagram: Author / Book entities
+classDiagram
+	class Author {
+		id : Long
+		name : String
+		books : List~Book~ 
+	}
+	class Book {
+		id : Long 
+		title : String 
+		author : Author
+	}
+	Author "1" -- "*" Book : writes
