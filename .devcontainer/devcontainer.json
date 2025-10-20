@@ -34,10 +34,11 @@
 			
 			// extensiones a agregar
 			"extensions": [
-				"vscjava.vscode-java-pack",				// Java Extension Pack
-				"vmware.vscode-boot-dev-pack",			// Spring Boot Extension Pack
-				"ms-azuretools.vscode-containers",		// Container Tools
-				"github.copilot-chat"					// GitHub Copilot Chat
+				"vscjava.vscode-java-pack",
+				"vmware.vscode-boot-dev-pack",
+				"ms-azuretools.vscode-containers",
+				"github.copilot-chat",
+				"MermaidChart.vscode-mermaid-chart"
 			]
 		}
 	}
