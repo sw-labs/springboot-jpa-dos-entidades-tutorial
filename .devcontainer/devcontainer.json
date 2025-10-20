@@ -1,0 +1,53 @@
+// Devcontainer para los tutoriales
+// - sobre el formato de archivo: https://aka.ms/devcontainer.json
+// - sobre las opciones para Java: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "Java",
+
+	// usa Ubuntu 22 como base
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+
+	// instala características de Java y Docker
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "latest",
+			"jdkDistro": "ms",
+			"installGradle": false,
+			"installMaven": true,
+			"mavenVersion": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/springboot-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "none"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+
+	// Personalizaciones
+	"customizations": {
+
+		// para VS Code
+		"vscode": {
+			// valores para settings.json por defecto
+			"settings": { 
+			},
+			
+			// extensiones a agregar
+			"extensions": [
+				"vscjava.vscode-java-pack",				// Java Extension Pack
+				"vmware.vscode-boot-dev-pack",			// Spring Boot Extension Pack
+				"ms-azuretools.vscode-containers",		// Container Tools
+				"github.copilot-chat"					// GitHub Copilot Chat
+			]
+		}
+	}
+
+	// lista de puertos dentro del contenedor que se deben hacer disponibles localmente.
+	// "forwardPorts": [],
+
+	// comandos a ejecutar después de crear el contenedor.
+	// "postCreateCommand": "java -version",
+
+	// Usar para ejecutar el contenedor como un usuario root, ver: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
